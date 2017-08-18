@@ -22,6 +22,10 @@ class graphics
 public:
     graphics();
     void Render(Mat);
+    void Render(Mat,double);
+    Mat DrawCircle(Mat,Point);
+    
+    CvFont font;
     
 private:
     

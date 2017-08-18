@@ -34,7 +34,7 @@ dependencies: /Users/yngve/github/openCvRespawn/openCvRespawn/main.cpp \
   /usr/local/include/opencv2/imgproc/types_c.h \
   /usr/local/include/opencv2/imgcodecs/imgcodecs_c.h \
   /usr/local/include/opencv2/videoio/videoio_c.h \
-  /Users/yngve/github/openCvRespawn/graphics/graphics.hpp \
+  /Users/yngve/github/openCvRespawn/openCvRespawn/graphics/graphics.hpp \
   /usr/local/include/opencv2/opencv.hpp \
   /usr/local/include/opencv2/calib3d.hpp \
   /usr/local/include/opencv2/features2d.hpp \
@@ -121,4 +121,5 @@ dependencies: /Users/yngve/github/openCvRespawn/openCvRespawn/main.cpp \
   /usr/local/include/opencv2/videostab/wobble_suppression.hpp \
   /usr/local/include/opencv2/videostab/ring_buffer.hpp \
   /usr/local/include/opencv2/core/core.hpp \
-  /Users/yngve/github/openCvRespawn/openCvRespawn/processors/processing.hpp
+  /Users/yngve/github/openCvRespawn/openCvRespawn/processors/processing.hpp \
+  /Users/yngve/github/openCvRespawn/openCvRespawn/segmentation/segmentation.hpp

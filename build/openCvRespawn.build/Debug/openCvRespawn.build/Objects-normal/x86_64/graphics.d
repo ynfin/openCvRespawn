@@ -1,5 +1,6 @@
-dependencies: /Users/yngve/github/openCvRespawn/graphics/graphics.cpp \
-  /Users/yngve/github/openCvRespawn/graphics/graphics.hpp \
+dependencies: \
+  /Users/yngve/github/openCvRespawn/openCvRespawn/graphics/graphics.cpp \
+  /Users/yngve/github/openCvRespawn/openCvRespawn/graphics/graphics.hpp \
   /usr/local/include/opencv2/opencv.hpp \
   /usr/local/include/opencv2/opencv_modules.hpp \
   /usr/local/include/opencv2/core.hpp \

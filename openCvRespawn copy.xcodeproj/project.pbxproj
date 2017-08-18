@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B1E2ED11F3BDB6300BE455E /* segmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B1E2ECF1F3BDB6300BE455E /* segmentation.cpp */; };
 		6BF4B6741F0AB4B000FB7D51 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BF4B6731F0AB4B000FB7D51 /* main.cpp */; };
 		6BF4B67C1F0AC17200FB7D51 /* processing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BF4B67A1F0AC17200FB7D51 /* processing.cpp */; };
 		6BF4B67F1F0AC76C00FB7D51 /* graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BF4B67D1F0AC76C00FB7D51 /* graphics.cpp */; };
@@ -26,14 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6B1E2ECF1F3BDB6300BE455E /* segmentation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = segmentation.cpp; path = segmentation/segmentation.cpp; sourceTree = "<group>"; };
-		6B1E2ED01F3BDB6300BE455E /* segmentation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = segmentation.hpp; path = segmentation/segmentation.hpp; sourceTree = "<group>"; };
 		6BF4B6701F0AB4B000FB7D51 /* openCvRespawn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = openCvRespawn; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF4B6731F0AB4B000FB7D51 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6BF4B67A1F0AC17200FB7D51 /* processing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = processing.cpp; path = processors/processing.cpp; sourceTree = "<group>"; };
 		6BF4B67B1F0AC17200FB7D51 /* processing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = processing.hpp; path = processors/processing.hpp; sourceTree = "<group>"; };
-		6BF4B67D1F0AC76C00FB7D51 /* graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = graphics.cpp; path = graphics/graphics.cpp; sourceTree = "<group>"; };
-		6BF4B67E1F0AC76C00FB7D51 /* graphics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = graphics.hpp; path = graphics/graphics.hpp; sourceTree = "<group>"; };
+		6BF4B67D1F0AC76C00FB7D51 /* graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = graphics.cpp; path = ../graphics/graphics.cpp; sourceTree = "<group>"; };
+		6BF4B67E1F0AC76C00FB7D51 /* graphics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = graphics.hpp; path = ../graphics/graphics.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +68,6 @@
 				6BF4B67A1F0AC17200FB7D51 /* processing.cpp */,
 				6BF4B67B1F0AC17200FB7D51 /* processing.hpp */,
 				6BF4B6731F0AB4B000FB7D51 /* main.cpp */,
-				6B1E2ECF1F3BDB6300BE455E /* segmentation.cpp */,
-				6B1E2ED01F3BDB6300BE455E /* segmentation.hpp */,
 			);
 			path = openCvRespawn;
 			sourceTree = "<group>";
@@ -137,7 +132,6 @@
 				6BF4B67C1F0AC17200FB7D51 /* processing.cpp in Sources */,
 				6BF4B6741F0AB4B000FB7D51 /* main.cpp in Sources */,
 				6BF4B67F1F0AC76C00FB7D51 /* graphics.cpp in Sources */,
-				6B1E2ED11F3BDB6300BE455E /* segmentation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

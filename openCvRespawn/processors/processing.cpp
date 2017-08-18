@@ -15,47 +15,32 @@
 using namespace std;
 using namespace cv;
 
-
-Mat imageInput;
-Mat imageProcessedHSV;
-Mat imageProcessedRGB;
-Mat imageProcessedGray;
-Mat imageProcessedGrayGauss;
-Mat imageProcessedGrayErode;
-Mat imageProcessedGrayDilate;
-
-Ptr<BackgroundSubtractor> pMOG2;
-
 processing::processing()
 {
-
+    namedWindow("processed", WINDOW_NORMAL);
 }
 
-Mat processing::CreateStaticBackground(deque<Mat> inputFrames)
+//vector<Point> processing::FindTargetCoords(Mat inputimage)
+Mat processing::FindTargetCoords(Mat inputimage)
 {
-    Mat fgMaskMOG2;
-    pMOG2 = createBackgroundSubtractorMOG2(); //MOG2 approach
-    int sampleSize = static_cast<int>(inputFrames.size());
-    Mat avgImg;
+    segmentedImageInput = inputimage;
+    GaussianBlur(segmentedImageInput, segmentedGauss, Size(15, 15), 15);
     
-    avgImg.create(inputFrames.front().size(),CV_32FC3);
+    SimpleBlobDetector blobdetect;
+    blobdetect = 
     
-    for(int i = 1; i < sampleSize; i++)
-    {
-        Mat iterateFrame = inputFrames.at(i);
-        accumulate(inputFrames.at(i), avgImg);
-    }
     
-    //avgImg = avgImg / sampleSize;
-    avgImg.convertTo(avgImg,CV_8U);
-    
-    return avgImg;
+    return segmentedGauss;
 }
 
-
-void processing::Segment(Mat inputMat)
+void processing::FindCenterMass()
 {
-    GaussianBlur(inputMat, imageProcessedGrayGauss, Size(9,9), 9);
-    imshow("BLUR", imageProcessedGrayGauss);
+    
+}
+
+void processing::Segment()
+{
+    GaussianBlur(segmentedImageInput, segmentedGauss, Size(9, 9), 9);
+    imshow("processed", segmentedGauss);
 }
 

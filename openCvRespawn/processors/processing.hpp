@@ -21,12 +21,17 @@ class processing
     
     public:
         processing();
-        void Segment(Mat);
-        Mat CreateStaticBackground(deque<Mat>);
-        //vector<Point2f> processNewImageForMid(Mat);
+        Mat FindTargetCoords(Mat);
+    
     private:
+        void Segment();
+        void FindCenterMass();
     
-    
+        // the variables used while determining the coordinates of the targets
+        Mat segmentedImageInput;
+        Mat segmentedGauss;
+
+        vector<Point> targets;
 };
 
 #endif /* processing_hpp */
